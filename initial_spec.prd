@@ -1,0 +1,158 @@
+# OUTPUT REQUIREMENTS
+- Output must be **pure Markdown**, valid in a browser-rendered environment.
+- No emojis, no special characters that can break Markdown.
+- Use clear headings (H1–H3), tables, and bullet lists.
+- Keep tone neutral, professional, engineering-focused.
+- No references to the prompt or to being an AI model.
+- All deliverables must be explicit and actionable.
+
+# PRODUCT CONTEXT
+Dillman Engineering LLC is a boutique engineering consultancy (a single engineer with optional design/editorial support).
+It is separate from the founder's personal website (richarddillman.com).
+The LLC site must focus on **services, case studies, process, and lead generation**, not personal branding.
+
+# PRODUCT GOALS
+- Present Dillman Engineering as a polished engineering consultancy.
+- Highlight specialties including:
+  - Web performance optimization and Core Web Vitals improvements
+  - Next.js 15 migrations and modern frontend architecture
+  - Multi-tenant SaaS systems
+  - SEO architecture and structured data (LD-JSON)
+  - Fractional engineering leadership
+  - AI-accelerated developer workflows
+  - Technical audits and modernization assessments
+- Generate consulting leads.
+- Build trust through verifiable results and case studies.
+
+# TARGET USERS
+- CTOs and Directors of Engineering
+- Product leaders at startups and mid-size tech companies
+- Companies needing modernization or architectural guidance
+- Clients seeking fractional engineering leadership
+
+# REQUIRED PRD SECTIONS
+Generate the following sections exactly:
+
+1. **Overview**
+   Brief description of the site and its purpose.
+
+2. **Objectives & Success Metrics**
+   Include measurable outcomes such as conversion targets, engagement, clarity of offerings.
+
+3. **Target Users & Use Cases**
+   Who will use the site, what problems they're trying to solve, and why they come here.
+
+4. **Value Proposition**
+   What Dillman Engineering offers and how it differentiates itself from freelancers or agencies.
+
+5. **Site Architecture / Sitemap**
+   Required pages:
+   - Home
+   - Services
+   - Case Studies
+   - Process
+   - About the Company
+   - Contact / Book a Call
+   Include subpoints for each page describing required content.
+
+6. **Detailed Page Requirements**
+   For each page above:
+   - Purpose
+   - Key content blocks
+   - Functional requirements
+   - Optional enhancements (e.g., interactive case study filters, dynamic OG images)
+
+7. **Brand & Tone Requirements**
+   - Speak as a company ("We"), not an individual.
+   - Professional, concise, performance-oriented, outcome-driven.
+   - Avoid personal anecdotes; focus on business value.
+
+8. **Technical Requirements**
+   Specify expectations for the build:
+   - Next.js 15 App Router
+   - Tailwind + ShadCN
+   - Metadata API + OpenGraph images
+   - LD-JSON structured data
+   - Fast Lighthouse scores
+   - Contact form or linked scheduling
+
+9. **SEO Requirements**
+   Structure, metadata, link hierarchy, schema types (e.g., Organization, Service, Article).
+
+10. **Case Study Structure Template**
+    Provide the repeatable data structure for each case study:
+    - Summary
+    - Problem
+    - Solution
+    - Impact (with metrics)
+    - Tech stack
+    - Engagement model
+
+11. **Risks & Dependencies**
+    Anything that could block the project or create uncertainty.
+
+12. **Appendix**
+    Include:
+    - Example hero statements
+    - Example service descriptions
+    - Example CTA text
+    - Notes on maintaining distinction between LLC site vs personal brand site
+
+# QUALITY REQUIREMENTS
+- No generic fluff; be specific.
+- All sections must be filled with concrete requirements tailored to Dillman Engineering.
+- Result should be immediately actionable for engineering and design teams.
+
+# INSTRUCTION
+Generate the full PRD now.
+(edited)
+
+
+
+
+
+
+
+Richard Dillman
+  2:52 AM
+- Replace Stampede with Unstable Wall of Elements (Elemental Blockade morph)
+  - Consider adding Mystic Orb or Degeneration somewhere
+
+
+Richard Dillman
+  3:38 AM
+Health 18678
+Magica 14560
+Stamina 24466
+3:39
+:dart: YOUR BEST FOOD CHOICE
+  Hearty Garlic Corn Chowder (Gold - Pure Stamina)
+  - +5395 Max Stamina
+  - This will bring you to ~29,861 Stamina (way higher than magicka)
+  :bar_chart: Why Stamina Food is Best for You
+  Current Stats (unbuffed):
+  - Health: 18,678
+  - Magicka: 14,560
+  - Stamina: 24,466 ← Your highest pool
+  With Stamina Food:
+  - Stamina: 29,861 (your primary stat)
+  - Pragmatic Fatecarver (35% of your damage) scales with this
+  - Tide King's Gaze (6% of damage) - stamina spammable benefits
+  - Stampede (4.3%) - costs stamina
+  - Solar Barrage (3.2%) - costs stamina
+  - Barbed Trap (3.0%) - costs stamina
+  With Magicka Food Instead:
+  - Magicka: 19,955 (still lower than your current stamina of 24,466)
+  - Fatecarver would STILL scale with stamina (because 24,466 > 19,955)
+  - You'd waste the magicka bonus!
+  :test_tube: POTIONS
+  Still use Essence of Heroism for max parse DPS:
+  - +106 Ultimate per use
+  - More Shooting Star casts
+  - Restores both magicka and stamina for sustain
+  :clipboard: Final Shopping List
+  For Maximum Parse DPS:
+  1. Hearty Garlic Corn Chowder (Gold) - Pure stamina food
+  2. Essence of Heroism (Gold) - Ultimate generation potions
+  This setup maximizes your Fatecarver damage (which scales with stamina since that's your higher pool) AND
+  sustains your stamina spammables!
