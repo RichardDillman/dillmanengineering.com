@@ -4,60 +4,111 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Case Studies',
   description:
-    'Real results from engineering consulting engagements. See how we have helped companies improve performance, modernize systems, and scale effectively.',
+    'Real results from engineering engagements. See how we have helped companies improve performance, modernize systems, and scale effectively.',
 };
 
 const caseStudies = [
   {
-    title: 'E-Commerce Platform Performance Overhaul',
+    title: 'Legacy Platform Migration to Next.js/TypeScript',
     summary:
-      'Reduced page load times by 60% and improved Core Web Vitals scores from failing to passing across all metrics.',
+      'Reduced build times from 45+ minutes to 75 seconds while completing a full migration from Python/Tornado/CoffeeScript to modern stack.',
     problem:
-      'A mid-size e-commerce company was losing conversions due to slow page loads and poor mobile performance.',
+      'Legacy Python/Tornado/CoffeeScript platform with 45+ minute build times was blocking rapid iteration, making deployments risky, and limiting engineering velocity. Technical debt had accumulated over years, creating maintenance burden and slowing feature development.',
     solution:
-      'Implemented server-side rendering, optimized images, reduced JavaScript bundle size, and introduced edge caching.',
+      'Led complete migration to Next.js/TypeScript/SCSS stack. Incrementally decomposed monolithic services into microservices, established modern CI/CD pipelines, implemented comprehensive testing, and standardized development practices across teams.',
     impact: [
-      '60% reduction in page load time',
-      'Core Web Vitals: All metrics passing',
-      '15% increase in conversion rate',
-      '25% reduction in bounce rate',
+      'Build times: 45+ min to 75 sec',
+      'Multiple daily deployments enabled',
+      'Reduced production incidents',
+      'Accelerated feature delivery',
     ],
-    techStack: ['Next.js', 'Vercel', 'Cloudflare', 'PostgreSQL'],
-    engagement: 'Fixed-scope engagement over 8 weeks',
+    techStack: ['Next.js', 'TypeScript', 'React', 'Node.js', 'AWS', 'Docker', 'CircleCI'],
+    engagement: 'Technical leadership over 2+ years',
   },
   {
-    title: 'Legacy React to Next.js Migration',
+    title: 'Multi-Tenant White-Label Job Search Platform',
     summary:
-      'Migrated a 200+ component React SPA to Next.js App Router with zero downtime and improved developer velocity.',
+      'Architected B2B SaaS platform enabling partners to launch branded job search sites, projecting $153K-$230K annual revenue per tenant.',
     problem:
-      'A SaaS company needed to improve SEO and performance but was stuck on an aging Create React App codebase.',
+      'Company wanted to expand revenue beyond consumer platform by enabling partners to leverage job search technology. Required building scalable multi-tenant architecture that could handle custom branding, domains, and configuration while maintaining single codebase.',
     solution:
-      'Planned and executed an incremental migration strategy, moving to Next.js while maintaining feature development.',
+      'Architected white-label platform with tenant isolation, dynamic configuration, custom domain mapping, and brand theming. Built admin tooling for tenant provisioning and management. Designed data isolation strategy ensuring security and performance across tenants.',
     impact: [
-      'Successful migration of 200+ components',
-      '40% improvement in Lighthouse scores',
-      'Organic traffic increased 3x in 6 months',
-      'Build times reduced by 50%',
-    ],
-    techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Prisma'],
-    engagement: 'Ongoing fractional engagement over 4 months',
-  },
-  {
-    title: 'Multi-Tenant Architecture Design',
-    summary:
-      'Designed and implemented tenant isolation for a B2B platform serving 500+ enterprise customers.',
-    problem:
-      'A growing B2B SaaS needed to support enterprise customers with strict data isolation and customization requirements.',
-    solution:
-      'Architected a multi-tenant system with row-level security, tenant-specific customization, and white-label capabilities.',
-    impact: [
-      'Successfully onboarded 500+ enterprise tenants',
+      '$153K-$230K projected annual revenue per tenant',
+      'Partner launch time: months to days',
       'Zero cross-tenant data incidents',
-      'Reduced tenant provisioning time from days to minutes',
-      'Enabled white-label deployments',
+      'Unlimited tenants with minimal overhead',
     ],
-    techStack: ['Node.js', 'PostgreSQL', 'Redis', 'AWS'],
-    engagement: 'Technical leadership engagement over 6 months',
+    techStack: ['Next.js', 'TypeScript', 'React', 'Node.js', 'PostgreSQL', 'AWS', 'Docker'],
+    engagement: 'Architecture and leadership engagement',
+  },
+  {
+    title: 'SEO Architecture Overhaul - 10x Traffic Increase',
+    summary:
+      'Implemented JSON-LD structured data and replaced infinite scroll with pagination, driving 10x organic traffic growth and +74K monthly SEO visits.',
+    problem:
+      'Infinite scroll prevented Google from discovering and indexing deep job listings. Job listings and articles not appearing in Google rich results. Search engines struggled to understand content structure, limiting visibility in competitive market.',
+    solution:
+      'Implemented comprehensive JSON-LD structured data across all content types (JobPosting, Article, Organization). Redesigned search UX from infinite scroll to paginated results with proper SEO implementation (canonical URLs, rel=prev/next, XML sitemaps).',
+    impact: [
+      '10x increase in organic SEO traffic',
+      '+74K monthly SEO visits',
+      'Job listings in Google rich results',
+      'Reduced dependency on paid acquisition',
+    ],
+    techStack: ['Next.js', 'JSON-LD', 'Schema.org', 'Server-Side Rendering'],
+    engagement: 'Fixed-scope SEO architecture engagement',
+  },
+  {
+    title: 'Core Web Vitals & Performance Optimization',
+    summary:
+      'Achieved all-green Lighthouse scores (Performance 91, Accessibility 100, SEO 96) through comprehensive performance refactoring.',
+    problem:
+      'Core Web Vitals scores in red/orange range hurt SEO rankings and conversion rates. LCP, FID, and CLS metrics failed Google thresholds, directly impacting search visibility and user experience.',
+    solution:
+      'Implemented comprehensive Web Vitals optimization: image optimization with next/image, font loading optimization, code splitting, lazy loading, server-side rendering improvements, and third-party script optimization. Established monitoring and performance budgets.',
+    impact: [
+      'Performance: 62 to 91 (+29)',
+      'Accessibility: 96 to 100',
+      'SEO: 89 to 96',
+      '90%+ green Core Web Vitals sitewide',
+    ],
+    techStack: ['Next.js', 'React', 'TypeScript', 'Lighthouse', 'Web Vitals'],
+    engagement: 'Performance optimization engagement',
+  },
+  {
+    title: 'Global Ad Platform for 30+ Premium Publications',
+    summary:
+      'Increased ad viewability from 45% to 85% across Vogue, The New Yorker, Wired, GQ, and 25+ other brands serving 229M+ monthly users.',
+    problem:
+      'Legacy ad platform across premium publications had poor viewability (45%), slow render times, and inconsistent implementation. Every millisecond of latency impacted global revenue across 229M+ monthly users and 1B+ monthly video views.',
+    solution:
+      'Architected and implemented unified ad platform serving all brands. Removed jQuery dependencies, optimized bundle size, implemented lazy loading and viewability tracking. Created shared UI tooling and plugin architecture. Standardized testing achieving 80%+ coverage.',
+    impact: [
+      'Ad viewability: 45% to 85%',
+      '229M+ monthly users served',
+      '1B+ monthly video views',
+      '80%+ test coverage achieved',
+    ],
+    techStack: ['JavaScript', 'React', 'Node.js', 'Google Ad Manager', 'Prebid', 'AWS'],
+    engagement: 'Senior engineering role over 3+ years',
+  },
+  {
+    title: 'Two-Paned Job Search UX Redesign',
+    summary:
+      'Increased job applications 50% by redesigning search experience to two-pane layout enabling inline browsing without page navigation.',
+    problem:
+      'Job seekers had to click into separate pages to view job details, then use back button to return to search results. This multi-tab workflow created friction, interrupted browsing flow, and reduced application conversion.',
+    solution:
+      'Revamped job search UX to two-pane layout allowing jobseekers to browse listings and view details in same tab. Implemented inline navigation that updates URL for SEO while maintaining smooth UX. Created new indexable URLs for each job view state.',
+    impact: [
+      '+50% job applications per user',
+      'New indexable job detail URLs',
+      'Maintained search context while browsing',
+      'Improved user satisfaction',
+    ],
+    techStack: ['React.js', 'Next.js', 'TypeScript', 'SEO'],
+    engagement: 'Product engineering leadership',
   },
 ];
 
